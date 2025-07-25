@@ -53,7 +53,7 @@ export default function App() {
         {!showTrash ? (
   <>
     {/* Extensions */}
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4">
       {filteredExtensions.length > 0 ? (
         filteredExtensions.map((ext) => (
           <ExtensionCard
@@ -75,7 +75,7 @@ export default function App() {
   <>
     {/* Trash Bin Content */}
     <h2 className="text-xl font-bold mb-4 dark:text-white">🗑️ Trash Bin</h2>
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4">
       {removed.length > 0 ? (
         removed.map((ext) => (
           <ExtensionCard

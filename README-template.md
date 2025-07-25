@@ -1,22 +1,28 @@
-# Frontend Mentor - Browser extensions manager UI solution
+Here’s your **cleaned and personalized README.md** file for your **Frontend Mentor - Browser Extensions Manager UI** solution. It's fully structured, markdown-compliant, and ready to go:
 
-This is a solution to the [Browser extensions manager UI challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/browser-extension-manager-ui-yNZnOfsMAp). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+---
+
+# Frontend Mentor - Browser Extensions Manager UI Solution
+
+This is a solution to the [Browser Extensions Manager UI challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/browser-extension-manager-ui-yNZnOfsMAp). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
+* [Overview](#overview)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+  * [The challenge](#the-challenge)
+  * [Screenshot](#screenshot)
+  * [Links](#links)
+* [My process](#my-process)
+
+  * [Built with](#built-with)
+  * [What I learned](#what-i-learned)
+  * [Continued development](#continued-development)
+  * [Useful resources](#useful-resources)
+* [Author](#author)
+* [Acknowledgments](#acknowledgments)
+
+---
 
 ## Overview
 
@@ -24,92 +30,78 @@ This is a solution to the [Browser extensions manager UI challenge on Frontend M
 
 Users should be able to:
 
-- Toggle extensions between active and inactive states
-- Filter active and inactive extensions
-- Remove extensions from the list
-- Select their color theme
-- View the optimal layout for the interface depending on their device's screen size
-- See hover and focus states for all interactive elements on the page
+* Toggle extensions between active and inactive states
+* Filter extensions by "All", "Active", and "Inactive"
+* Remove extensions from the list
+* Restore removed extensions from a trash section
+* Select and persist their preferred color theme (light/dark)
+* View a responsive layout on different screen sizes
+* See hover and focus states for all interactive elements
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![Screenshot of project](./screenshot.jpg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+* **Solution URL**: [Add solution URL here](https://your-solution-url.com)
+* **Live Site URL**: [Add live site URL here](https://your-live-site-url.com)
+
+---
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+* Semantic HTML5 markup
+* Tailwind CSS
+* CSS Grid and Flexbox
+* React + Vite
+* LocalStorage for theme persistence
+* Mobile-first workflow
+* Component-based structure
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+* How to persist dark mode with `localStorage` and `useEffect`
+* Using Tailwind's `focus-visible` utility for accessibility
+* Managing local UI state vs. global filter state in React
+* Using `.map()` and conditional rendering for trash functionality
+* Building a custom toggle switch that is keyboard accessible
 
-To see how you can add code snippets, see below:
+#### Example toggle logic:
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+const handleToggle = () => {
+  setLocalActive(!localActive);
+  setTimeout(() => {
+    onToggle(); // update parent
+  }, 500);
+};
 ```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+I plan to:
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+* Refactor the app to use `useReducer` for state management
+* Add unit tests with React Testing Library
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+* [Tailwind Focus Ring Guide](https://tailwindcss.com/docs/ring-width) — Helped me implement accessible focus states.
+* [Frontend Mentor Discord](https://discord.gg/frontendmentor) — Great for feedback and insights.
+* [CSS Tricks - Responsive Layouts](https://css-tricks.com/snippets/css/complete-guide-grid/) — Helped with the grid setup for responsive layouts.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+---
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+* Frontend Mentor – [@dev-olabanks](https://www.frontendmentor.io/profile/BANKOLEDO)
+* Twitter – [@dev\_olabanks](https://twitter.com/dev_olabanks)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+---
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+Special thanks to the Frontend Mentor community for constant inspiration.
