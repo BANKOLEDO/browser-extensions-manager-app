@@ -37,23 +37,23 @@ Users should be able to:
 ### Screenshot
 Mobile View (Light)
 
-![mobile-view-light](public\screenshots\mobile-view-light.png)
+![mobile-view-light](/screenshots/mobile-view-light.png)
 
 Mobile View (Dark)
 
-![mobile-view-dark](public\screenshots\mobile-view-dark.png)
+![mobile-view-dark](/screenshots/mobile-view-dark.png)
 
 Tablet View
 
-![tablet-view](public\screenshots\tablet-view.png)
+![tablet-view](/screenshots/tablet-view.png)
 
 Desktop View
 
-![Desktop View](public\screenshots\desktop-view.png)
+![Desktop View](/screenshots/desktop-view.png)
 
 ### Links
 
-* **Solution URL**: [Solution](https://github.com/BANKOLEDO/browser-extensions-manager-app/tree/main)
+* **Solution URL**: [Solution](https://github.com/BANKOLEDO/browser-extensions-manager-app/)
 * **Live Site URL**: [Live Site](https://browser-extensions-manager-app-ola.vercel.app/)
 
 ---
