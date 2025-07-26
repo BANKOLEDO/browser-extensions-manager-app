@@ -5,7 +5,7 @@ import FilterTabs from "./components/FilterTabs";
 import extensionData from "./data/extensions.json";
 import { Trash2 } from "lucide-react";
 
-export default function App() {
+function App() {
   const [extensions, setExtensions] = useState(extensionData);
   const [removed, setRemoved] = useState([]);
   const [filter, setFilter] = useState("All");
@@ -107,3 +107,5 @@ export default function App() {
     </div>
   );
 }
+
+export default App;
